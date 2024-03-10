@@ -30,10 +30,8 @@ header a{
     color: #072b95;;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:11px;
-    font-weight:bold;
-    position: relative;
-    
+    font-size:10px;
+    font-weight:bold;   
 }
 
 header #li{ 
@@ -51,10 +49,6 @@ header #VGC{
 header #logo{
     float: left;
     position: left;
-   padding: 0;
-   padding-bottom: 0;
-   margin-bottom: 0;
-   padding-left: 7px;
 }
 
 header #VGC h1{
@@ -67,9 +61,6 @@ header #VGC h1{
 
 header nav{
     float: left;
-    justify-content: center;
-    position: relative;
-    margin-left: 2px;
 }
 
 header .current a{
