@@ -23,7 +23,7 @@ header {
     color: #f0f0f0;
     padding:5px;
     border-bottom: #0de723 3px solid;
-    height:100px;
+    height:92px;
     justify-content: center;
     position: relative;
 }
@@ -32,7 +32,7 @@ header a{
     color: #072b95;;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:15px;
+    font-size:12px;
     font-weight:bold;
     position: relative;
     padding-top: 0;
@@ -77,7 +77,7 @@ header nav{
     float: left;
     justify-content: center;
     position: relative;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 header .current a{
