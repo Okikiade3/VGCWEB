@@ -9,22 +9,20 @@ body{
 
 .compound{
     width: 100%;
-    margin:auto;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 ul #ul{
     margin:0;
     padding:0;
+     
 }
 
 header {
     background: #4a5b76;
     color: #f0f0f0;
-    padding:5px;
     border-bottom: #0de723 3px solid;
-    height:92px;
-    justify-content: center;
+    height:98px;
     position: relative;
 }
 
@@ -32,26 +30,24 @@ header a{
     color: #072b95;;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:14px;
+    font-size:11px;
     font-weight:bold;
     position: relative;
-    padding-right: 20px;
+    padding-right: 7PX;
 }
 
 header #li{ 
-    display:inline;
-    float: left;
+    display:inline-block;
     position: relative;
-    margin-top: 10px;
+    
 }
 
 header #VGC{
     float: left;
-    padding-left: 5px;
     padding-bottom: 0;
     margin-bottom: 0;  
-    font-size: 10px; 
-    margin-top: 10px;
+    font-size: 9px; 
+    margin-top: 7px;
 }
 
 header #logo{
@@ -60,21 +56,22 @@ header #logo{
    padding: 0;
    padding-bottom: 0;
    margin-bottom: 0;
-   padding-left: 17px;
+   padding-left: 7px;
 }
 
 header #VGC h1{
-    padding-bottom: 0;
-    padding-left: 8px;
+   
+    padding-left: 3px;
     font-weight:bold;
-    margin-top: 2px;
-    margin-bottom: 0;
+    margin-top: 3px;
+     
 }
 
 header nav{
     float: left;
     justify-content: center;
     position: relative;
+     
 }
 
 header .current a{
@@ -110,4 +107,18 @@ section h2, h3{
     color: #072b95;   
 }
 
- 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .link, #VGC {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
