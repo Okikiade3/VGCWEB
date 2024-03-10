@@ -32,21 +32,17 @@ header a{
     color: #072b95;;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     position: relative;
-    padding-top: 0;
-    padding-right: 40px;
-    margin-top: 0;
+    padding-left: 15px;
 }
 
 header #li{ 
     display:inline;
     float: left;
-    padding-left: 0;
     position: relative;
-    padding-top: 0;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 header #VGC{
@@ -54,7 +50,8 @@ header #VGC{
     padding-left: 5px;
     padding-bottom: 0;
     margin-bottom: 0;  
-    font-size: 10px; 
+    font-size: 12px; 
+    margin-top: 10px;
 }
 
 header #logo{
@@ -78,7 +75,6 @@ header nav{
     float: left;
     justify-content: center;
     position: relative;
-    margin-top: 15px;
 }
 
 header .current a{
