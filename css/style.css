@@ -31,19 +31,25 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
     font-size:10px;
-    font-weight:bold;   
+    font-weight:bold; 
+    margin-top: 0; 
+    margin-left: 0; 
 }
 
 header #li{ 
     display:inline-block;
     position: relative;
-    
+    margin-top: 0;
+    margin-left: 0;
 }
 
 header #VGC{
     float: left; 
-    font-size: 9px; 
-    margin-top: 7px;
+    font-size: 7px; 
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 0;
 }
 
 header #logo{
@@ -52,15 +58,15 @@ header #logo{
 }
 
 header #VGC h1{
-   
-    padding-left: 3px;
     font-weight:bold;
-    margin-top: 3px;
-     
+    margin-bottom: 0px;
+    margin-right: 0px;
 }
 
 header nav{
     float: left;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 header .current a{
@@ -84,7 +90,7 @@ footer {
 
 section h1{
     background-color: #dee4ec;
-    width: 1220px;
+    width: 979px;
     color: #0de723;
     justify-content: center;
     position: relative;
@@ -95,19 +101,3 @@ section h2, h3{
     background-color: #dee4ec;
     color: #072b95;   
 }
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .link, #VGC {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-  
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
-    nav a {
-      float: none;
-      width: 100%;
-    }
-  }
