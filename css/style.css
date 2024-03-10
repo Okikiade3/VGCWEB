@@ -50,8 +50,8 @@ header #li{
 }
 
 header #VGC{
-    float: right;
-    padding-right: 245px;
+    float: left;
+    padding-left: 10px;
     padding-bottom: 0;
     margin-bottom: 0;   
 }
