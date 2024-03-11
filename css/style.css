@@ -23,15 +23,17 @@ header {
     color: #f0f0f0;
     height:57px;
     position: relative;
+     width: 1020px;
 }
 
 nav{
     background: #4a5b76;
     border-bottom: #0de723 3px solid;
-    width: 980px;
+    width: 1000px;
     height: 48px;
     margin-left: 0px;
     padding-left: 25px;
+    
 }
 
 .page a{
@@ -54,10 +56,10 @@ nav{
 
 header #VGC{
     float: left; 
-    font-size:10px; 
+    font-size:9px; 
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-right: 0;
     
 }
@@ -95,7 +97,7 @@ footer {
     color: #040407;
     background-color:#6578af;
     text-align: center;
-    height: 90px;
+    height: 107px;
 }
 
 section h1{
@@ -109,4 +111,16 @@ section h1{
 section h2, h3{
     background-color: #dee4ec;
     color: #072b95;   
+}
+
+@media only screen and (max-width:99900%){
+    header { 
+        height:1000%;
+        width: 1000%;
+    }
+    
+    section {
+        height:1000%;
+        width: 1000%;
+    }
 }
