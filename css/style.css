@@ -1,9 +1,9 @@
 body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-    margin-left: 5px;
     background-color: #f4f4f4;
+    width: auto;
 }
 
 
@@ -23,16 +23,15 @@ header {
     color: #f0f0f0;
     height:57px;
     position: relative;
-     width: 1020px;
+     padding-top: 3px;
 }
 
 nav{
     background: #4a5b76;
     border-bottom: #0de723 3px solid;
-    width: 1000px;
     height: 48px;
     margin-left: 0px;
-    padding-left: 25px;
+    padding-left: 20px;
     
 }
 
@@ -59,9 +58,8 @@ header #VGC{
     font-size:9px; 
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-right: 0;
-    
 }
 
 header #logo{
@@ -75,7 +73,6 @@ header #VGC h1{
     font-weight:bold;
     margin-bottom: 0px;
     margin-right: 0px;
-     
 }
 
 .page nav{
@@ -97,14 +94,14 @@ footer {
     color: #040407;
     background-color:#6578af;
     text-align: center;
-    height: 107px;
+    height: 78px;
 }
 
 section h1{
     background-color: #dee4ec;
-    width: 974px;
+    width: 900px;
     color: #0de723;
-    position: center;
+    padding-left: 400px;
     
 }
 
@@ -113,14 +110,20 @@ section h2, h3{
     color: #072b95;   
 }
 
-@media only screen and (max-width:99900%){
+@media only screen and (max-width:3000px){
     header { 
-        height:1000%;
-        width: 1000%;
+         
+        width: 972px;
     }
     
-    section {
-        height:1000%;
-        width: 1000%;
+    body {
+         
+        width: 970px;
     }
+
+    nav {
+         
+        width: 952px;
+    }
+    
 }
