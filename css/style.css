@@ -1,129 +1,187 @@
 body{
-    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    font: 10px Arial, Helvetica,sans-serif;
     padding: 5px;
-    margin: 0;
+    margin:0;
     background-color: #f4f4f4;
-    width: auto;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    min-width: 100%;
 }
 
+ 
 
 .compound{
-    width: 100%;
+     width: 100%; 
     overflow: hidden;
 }
 
-nav #ul{
-    margin:0;
-    padding:0;
-     
-}
-
-header {
-    background: #4a5b76;
-    color: #f0f0f0;
-    height:57px;
-    position: relative;
-     padding-top: 3px;
-}
-
-nav{
-    background: #4a5b76;
-    border-bottom: #0de723 3px solid;
-    height: 48px;
-    padding-left: 120px;
-     
-}
-
-.page a{
-    color: #072b95;;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size:11px;
-    font-weight:bold; 
-    margin-top: 0;  
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.page #li{ 
-    display:inline;
-    position: relative;
-    margin-top: 0;
-}
-
-header #VGC{
-    float: left; 
-    font-size:9px; 
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 190px;
-    margin-right: 0;
+header{
+    background: #bdcba1;
+    height:110px;
+    width: 100%;
+     border-bottom: #160886 2.5px solid;
+     padding-top: 2px;
 }
 
 header #logo{
     float: left;
     position: left;
-    margin-left: 6px;
-    margin-top: 6px;
+    margin-left: 19px;
+    width: 60px;
+    height: 60px;
 }
 
 header #VGC h1{
     font-weight:bold;
-    margin-bottom: 0px;
-    margin-right: 0px;
+    text-align: center;
+    font-size:25px;
+    padding-bottom: 0; 
+    color: #160886;
 }
 
-.page nav{
-    float: left;
+ header nav {
+    text-align: center;
+    padding-top: 17px;
+} 
+
+nav ul {
+    list-style: none;
+}
+
+header a{
+    color: #160886;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:10px;
+    font-weight:bold;  
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.menu-botton {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 82vh;
+    width: 200px;
+    z-index: 299;
+    background-color: rgb(221, 227, 218);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 68px;
+    padding-left: 0;
     margin-top: 0;
 }
 
-.page .current a{
-    color: #0de723;
+.sidebar a {
+    width: 100%;
+}
+header #li{ 
+    display:inline-block;
+}
+
+nav .current a{
+    color: white;
     font-weight:bold;
 }
 
-.page a:hover{
-    color: rgb(231, 236, 226);
+header a:hover{
+    color: rgb(162, 55, 55);
     font-weight:bold;
+}
+
+section h1{
+    background-color: rgb(221, 227, 218);
+    letter-spacing: 10px;
+    font-style: italic;
+    color: #160886;
+    text-align: center;
+    font-size: 23px;
+}
+
+section h2{
+    background-color: rgb(221, 227, 218);
+    color: #160886;  
+    font-size: 20px;
 }
 
 footer {
     color: #040407;
-    background-color:#6578af;
+    background-color:#bdcba1;
     text-align: center;
-    height: 75px;
+    padding-top: 1px;
 }
 
-section h1{
-    background-color: #dee4ec;
-    width: 900px;
-    color: #0de723;
-    padding-left: 400px;
+#gallery img{
+    width: 250px;
+    height: 180px;
+    margin: 7.7px;
+}
+#gallery p {
+    font-family: 'Raleway';
+    font-size: 1.5em;
+    border-bottom: 1px solid cornflowerblue;
+    width: 30%;
+    margin-left: 7.7px;
+    margin-bottom: 7.7px;
+}
+
+#event img{
+    width: 300px;
+    height: 290px;
+    margin: 7.7px;
+}
+           
     
+
+ @media(max-width: 846.7px){
+        .hideOnMobile {
+            display: none;
+            visibility: hidden;
+            
+        } 
+
+        .menu-botton{
+            display: block;
+            align-items: center;
+            display: inline;
+            float: right;
+        }
+
+        header {
+            height: 148px;
+        }
+    } 
+
+    @media(max-width: 500px) {
+        .sidebar{
+            width: 60%;
+        }
+        
+    }
+   
+@media(min-width:846px) {
+    header{
+        padding-top: 1px
+    }   
+     
 }
 
-section h2, h3{
-    background-color: #dee4ec;
-    color: #072b95;   
+@media(min-width:650px) and (max-width:845px){
+    header{
+        height:118px;
+        padding-top:1px;
+    }
 }
 
-@media only screen and (max-width:3000px){
-    header { 
-         
-        width: 975px;
-    }
-    
-    body {
-        height: auto; 
-        width: 970px;
-    }
 
-    nav {
-         
-        width: 855px;
-    }
-    
-}
