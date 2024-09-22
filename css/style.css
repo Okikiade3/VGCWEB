@@ -170,6 +170,12 @@ footer {
         .sidebar{
             width: 60%;
         }
+
+        #gallery img{
+            width: 150px;
+            height: 143px;
+            margin: 11.7px;
+        }
         
     }
    
