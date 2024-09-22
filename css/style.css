@@ -123,9 +123,9 @@ footer {
 }
 
 #gallery img{
-    width: 250px;
-    height: 180px;
-    margin: 7.7px;
+    width: 210px;
+    height: 183px;
+    margin: 11.7px;
 }
 #gallery p {
     font-family: 'Raleway';
@@ -161,6 +161,9 @@ footer {
         header {
             height: 148px;
         }
+
+        #gallery p {
+             width: 40%;
     } 
 
     @media(max-width: 500px) {
